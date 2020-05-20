@@ -1,0 +1,7 @@
+lnaguage: node
+
+node:
+    - "14"
+
+services:
+    - docker
