@@ -6,15 +6,12 @@ const app = express()
 const fs = require('fs')
 const filename = "target.txt"
 //fs.watch(filename,() => console.log('file chnaged'));
-//making it in synchronous
+const errorHandler = err => console.log(err);
+const dataHandler =data => console.log(data.toString());
 
 fs.readFile(filename,(err,data)=>{
-    if(err){
-        console.log(err);
-    }
-    if(data){
-        console.log(data.toString());
-    }
+    if(err) errorHandler(err);
+        dataHandler(data);
     
 });
 
