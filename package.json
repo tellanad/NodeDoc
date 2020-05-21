@@ -1,18 +1,25 @@
 {
-  "name": "101-app",
+  "name": "nodedoc",
   "version": "1.0.0",
+  "description": "learningnode",
   "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nodemon src/index.js"
-  },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "uuid": "^3.3.3",
-    "wait-port": "^0.2.2"
+    "nodemon": "^2.0.4"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tellanad/NodeDoc.git"
+  },
+  "author": "Sreenath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tellanad/NodeDoc/issues"
+  },
+  "homepage": "https://github.com/tellanad/NodeDoc#readme"
 }

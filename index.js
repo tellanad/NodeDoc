@@ -1,10 +1,29 @@
-var express = require('express');
-var app = express();
+//import express code module
+const express = require('express')
+const app = express()
 
-app.get('/',function(req,res){
-    res.send("Docker travis node !")
+//import core fs module
+const fs = require('fs')
+const filename = "target.txt"
+//fs.watch(filename,() => console.log('file chnaged'));
+//making it in synchronous
+
+fs.readFile(filename,(err,data)=>{
+    if(err){
+        console.log(err);
+    }
+    if(data){
+        console.log(data.toString());
+    }
+    
 });
 
-app.listen(3000,function(){
+console.log("Node js is async programming");
+
+app.get('/',(req,res)=>{
+    res.send("Docker travis node UP go!")
+});
+
+app.listen(3000,()=>{
     console.log("Welcome here you go!")
 });
