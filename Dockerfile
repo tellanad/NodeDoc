@@ -1,5 +1,5 @@
 #Specifies where to get the base image and creates a container foir it
-FROM node:12
+FROM node:14
 
 #Set Working directory . paths will be relative to this WORKDIR
 RUN mkdir -p /usr/src/app
